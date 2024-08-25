@@ -1,0 +1,28 @@
+Başla
+input n
+dizi : n boyutlu rastgele sayilar dizisi tanımla
+adet : n*n-1 / 2 
+toplam : adet boyutlu toplam dizisi oluştur 
+int i = 0
+int k = 0
+int j = 0
+
+For i = 1 to n do {
+For j = i + 1 to n do {
+  toplam[k] = fabs(dizi[i] + dizi[j])
+  k = k + 1
+ }
+}
+
+quick_sort fonksiyonuna paremetre olarak toplam dizisini ver, çalıştır.
+
+en_kucuk = toplam[0]
+
+For i = 1 to n do {
+For j = i + 1 to n do {
+  if( fabs(dizi[i] + dizi[j] == en_kucuk) then
+   output dizi[i] dizi[j]
+ }
+}
+
+
