@@ -1,17 +1,17 @@
-# Project: fileread
+# Project: ornek2*
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = fileread.o
-LINKOBJ  = fileread.o
+OBJ      = ornek2.o
+LINKOBJ  = ornek2.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32 -pg
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = fileread.exe
-CXXFLAGS = $(CXXINCS) -m32 -Wall -Werror -pg
-CFLAGS   = $(INCS) -m32 -Wall -Werror -pg
+BIN      = ornek2.exe
+CXXFLAGS = $(CXXINCS) -m32 -Wall -Werror -Wfatal-errors -pg
+CFLAGS   = $(INCS) -m32 -Wall -Werror -Wfatal-errors -pg
 RM       = rm.exe -f
 
 .PHONY: all all-before all-after clean clean-custom
@@ -24,5 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-fileread.o: fileread.c
-	$(CC) -c fileread.c -o fileread.o $(CFLAGS)
+ornek2.o: ornek2.c
+	$(CC) -c ornek2.c -o ornek2.o $(CFLAGS)
